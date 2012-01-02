@@ -86,7 +86,10 @@ function subgroups_page_handler($page){
 			elgg_set_page_owner_guid($page[1]);
 			include($pages_path."/subgroups/owner.php");
 			break;
+		default:
+			return false;
 	}
+	return true;
 }
 
 function subgroups_menu_setup($hook, $type, $return, $params){
