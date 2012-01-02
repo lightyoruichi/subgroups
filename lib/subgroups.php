@@ -15,6 +15,7 @@
 function get_subgroups($group, $options = array()){
 	if($group instanceof ElggGroup){
 		
+		$options['type'] = 'group';
 		$options['container_guid'] = $group->guid;
 		return elgg_get_entities(array($options));
 		
@@ -33,6 +34,7 @@ function list_subgroups($group, $options = array()){
 		);
 		$options = array_merge($defaults, $options);
 		
+		$options['type'] = 'group';
 		$options['container_guid'] = $group->guid;
 	
 		elgg_push_context('subgroups');

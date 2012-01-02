@@ -24,7 +24,7 @@ elgg_push_breadcrumb($owner->name, $owner->getURL());
 elgg_push_breadcrumb(elgg_echo('relatedgroups'));
 
 // List
-$content = list_subgroups($page_owner);
+$content = list_subgroups($owner);
 if (!$content) {
 	$content = elgg_echo("subgroups:none");
 }

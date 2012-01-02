@@ -17,6 +17,7 @@ $all_link = elgg_view('output/url', array(
 ));
 
 $params = array(
+	'type' => 'group',
 	'container_guid' => $vars['entity']->guid,
 	'limit' => $limit,
 	'types' => 'group',
