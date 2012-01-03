@@ -29,7 +29,7 @@ function subgroups_init() {
 	elgg_register_plugin_hook_handler('register', 'menu:entity', 'subgroups_menu_setup', 9999);
 
 	// Extending views
-	elgg_extend_view('groups/sidebar/members', 'groups/sidebar/subgroups');
+	elgg_extend_view('groups/sidebar/members', 'groups/sidebar/subgroups', 300);
 	//TODO elgg_extend_view('groups/forum_latest', 'subgroups/frontpage');
 
 	// Extending CSS
