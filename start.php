@@ -3,6 +3,12 @@
  * Elgg subgroups plugin
  *
  * @package ElggSubgroups
+ * 
+ * TODO:
+ *       * ElggSubgroup class with getMetaContainerGUID() ?
+ *       * Subgroups should disapear from general group listing, like subpages
+ *       * Subgroup graphs
+ * 
  */
 
 elgg_register_event_handler('init', 'system', 'subgroups_init');
