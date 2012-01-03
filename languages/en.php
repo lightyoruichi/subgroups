@@ -9,6 +9,7 @@ $english = array(
 	"subgroups" => 'Subgroups',
 	"subgroups:more" => 'View all subgroups',
 	"subgroups:owner" => 'Subgroups of %s',
+	"subgroups:owner:single" => 'Subgroup of %s',
 	"subgroups:none" => 'This group has no subgroups.',
 	"subgroups:group" => 'Group subgroups',
 	"subgroups:in_frontpage" => 'Show subgroups on group page',
